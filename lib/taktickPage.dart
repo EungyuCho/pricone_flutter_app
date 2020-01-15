@@ -1,4 +1,8 @@
 import 'package:clan_test/1namedTaktick.dart';
+import 'package:clan_test/2namedTaktick.dart';
+import 'package:clan_test/3namedTaktick.dart';
+import 'package:clan_test/4namedTaktick.dart';
+import 'package:clan_test/5namedTaktick.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -115,135 +119,132 @@ class _tacktickRouteState extends State<tacktickRoute> {
               margin: EdgeInsets.only(top: height/25),
               child:
                   Center(
-                child: PageView(
-                  scrollDirection: Axis.horizontal,
-                  controller: pageController,
-                  children: <Widget>[
-                    Container(
-                      margin: EdgeInsets.all(25.0),
-                      child: GestureDetector(
-                        child: new Container(
-                          width: 200,
-                          height: 200,
-                          decoration: new BoxDecoration(
-                            color: Colors.white,
-                            border: Border.all(
-                              color: Colors.pink[100],
-                              width: 8,
+                    child: PageView(
+                      scrollDirection: Axis.horizontal,
+                      controller: pageController,
+                      children: <Widget>[
+                        Container(
+                          margin: EdgeInsets.all(25.0),
+                          child: GestureDetector(
+                            child: new Container(
+                              width: 200,
+                              height: 200,
+                              decoration: new BoxDecoration(
+                                color: Colors.white,
+                                border: Border.all(
+                                  color: Colors.pink[100],
+                                  width: 8,
+                                ),
+                                borderRadius: BorderRadius.circular(20.0),
+                              ),
+                              child: Image.asset(images[0],
+                                width: width/2,
+                                height: width/2,
+                              ),
                             ),
-                            borderRadius: BorderRadius.circular(20.0),
-                          ),
-                          child: Image.asset(images[0],
-                            width: width/2,
-                            height: width/2,
+                            onTap: (){
+                              print('gg');
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>namedTaktickOne()));
+                            },
                           ),
                         ),
-                        onTap: (){
-                          print('gg');
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>namedTaktickOne()));
-                        },
-                      ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.all(25.0),
-                      child: GestureDetector(
-                        child: new Container(
-                          height: 200,
-                          decoration: new BoxDecoration(
-                            color: Colors.white,
-                            border: Border.all(
-                              color: Colors.pink[100],
-                              width: 8,
+                        Container(
+                          margin: EdgeInsets.all(25.0),
+                          child: GestureDetector(
+                            child: new Container(
+                              height: 200,
+                              decoration: new BoxDecoration(
+                                color: Colors.white,
+                                border: Border.all(
+                                  color: Colors.pink[100],
+                                  width: 8,
+                                ),
+                                borderRadius: BorderRadius.circular(20.0),
+                              ),
+                              child: Image.asset(images[1],
+                                width: width/2,
+                                height: width/2,
+                              ),
                             ),
-                            borderRadius: BorderRadius.circular(20.0),
-                          ),
-                          child: Image.asset(images[1],
-                            width: width/2,
-                            height: width/2,
+                            onTap: (){
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>namedTaktickTwo()));
+                            },
                           ),
                         ),
-                        onTap: (){
-                          print('its works');
-                        },
-                      ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.all(25.0),
-                      child: GestureDetector(
-                        child: new Container(
-                          height: 200,
-                          decoration: new BoxDecoration(
-                            color: Colors.white,
-                            border: Border.all(
-                              color: Colors.pink[100],
-                              width: 8,
+                        Container(
+                          margin: EdgeInsets.all(25.0),
+                          child: GestureDetector(
+                            child: new Container(
+                              height: 200,
+                              decoration: new BoxDecoration(
+                                color: Colors.white,
+                                border: Border.all(
+                                  color: Colors.pink[100],
+                                  width: 8,
+                                ),
+                                borderRadius: BorderRadius.circular(20.0),
+                              ),
+                              child: Image.asset(images[2],
+                                width: width/2,
+                                height: width/2,
+                              ),
                             ),
-                            borderRadius: BorderRadius.circular(20.0),
-                          ),
-                          child: Image.asset(images[2],
-                            width: width/2,
-                            height: width/2,
+                            onTap: (){
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>namedTaktickThree()));
+                            },
                           ),
                         ),
-                        onTap: (){
-                          print('gg11');
-                        },
-                        onDoubleTap: (){
-                          print('ㅇㅇㅇ');
-                        },
-                      ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.all(25.0),
-                      child: GestureDetector(
-                        child: new Container(
-                          decoration: new BoxDecoration(
-                            color: Colors.white,
-                            border: Border.all(
-                              color: Colors.pink[100],
-                              width: 8,
+                        Container(
+                          margin: EdgeInsets.all(25.0),
+                          child: GestureDetector(
+                            child: new Container(
+                              decoration: new BoxDecoration(
+                                color: Colors.white,
+                                border: Border.all(
+                                  color: Colors.pink[100],
+                                  width: 8,
+                                ),
+                                borderRadius: BorderRadius.circular(20.0),
+                              ),
+                              child: Image.asset(images[3],
+                                width: width/2,
+                                height: width/2,
+                              ),
                             ),
-                            borderRadius: BorderRadius.circular(20.0),
-                          ),
-                          child: Image.asset(images[3],
-                            width: width/2,
-                            height: width/2,
+                            onTap: (){
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>namedTaktickFour()));
+                            },
                           ),
                         ),
-                        onTap: (){
-                          print('gg');
-                        },
-                      ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.all(25.0),
-                      child: GestureDetector(
-                        child: new Container(
-                          height: 200,
-                          decoration: new BoxDecoration(
-                            color: Colors.white,
-                            border: Border.all(
-                              color: Colors.pink[100],
-                              width: 8,
+                        Container(
+                          margin: EdgeInsets.all(25.0),
+                          child: GestureDetector(
+                            child: new Container(
+                              height: 200,
+                              decoration: new BoxDecoration(
+                                color: Colors.white,
+                                border: Border.all(
+                                  color: Colors.pink[100],
+                                  width: 8,
+                                ),
+                                borderRadius: BorderRadius.circular(20.0),
+                              ),
+                              child: Image.asset(images[4],
+                                width: width/2,
+                                height: width/2,
+                              ),
                             ),
-                            borderRadius: BorderRadius.circular(20.0),
-                          ),
-                          child: Image.asset(images[4],
-                            width: width/2,
-                            height: width/2,
+                            onTap: (){
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>namedTaktickFive()));
+                            },
                           ),
                         ),
-                        onTap: (){
-                          print('gg');
-                        },
-                      ),
+                      ],
+                      onPageChanged: (index){
+                        pageChanged(index);
+                      },
                     ),
-                  ],
-                  onPageChanged: (index){
-                    pageChanged(index);
-                  },
-                ),
-              ),
+                  ),
             ),
 
           ],

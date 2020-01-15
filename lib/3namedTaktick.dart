@@ -2,12 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class namedTaktickOne extends StatefulWidget {
+class namedTaktickThree extends StatefulWidget {
   @override
-  _namedTaktickOneState createState() => new _namedTaktickOneState();
+  _namedTaktickThreeState createState() => new _namedTaktickThreeState();
 }
 
-class _namedTaktickOneState extends State<namedTaktickOne> {
+class _namedTaktickThreeState extends State<namedTaktickThree> {
 
 
 
@@ -101,7 +101,6 @@ class _namedTaktickOneState extends State<namedTaktickOne> {
   final String Crisutina = 'images/107131.jpg';
 
 
-
   @override
   Widget build(BuildContext context) {
 
@@ -109,144 +108,136 @@ class _namedTaktickOneState extends State<namedTaktickOne> {
     int height = MediaQuery.of(context).size.height.toInt();
     int appbarHeightDevided = 28;
     double appbarHeight = height/appbarHeightDevided;
-        return Scaffold(
-          appBar: AppBar(
-            backgroundColor: Colors.pink[100],
-            title: Text('1네임드(고블린 그레이트)',
-            style: TextStyle(
-              fontSize: 30,
-              fontFamily: 'cafeDong',
-              ),
-            ),
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.pink[100],
+        title: Text('3네임드(레이스 로드)',
+          style: TextStyle(
+            fontSize: 30,
+            fontFamily: 'cafeDong',
           ),
-          body:  Container(
-            child: ListView(
-              scrollDirection: Axis.vertical,
-              children: <Widget>[
-                GestureDetector(
-                  child: makeRowWidget(width, height, 3, 143, Zuun, Kaori, Makoto, Sumaki, Crisutina),
-                  onTap: (){
-                    setState(() {
-                      launchWebView("https://youtu.be/EoVEj9P1d5o");
-                    });
-                  },
-                ),
-                GestureDetector(
-                  child: makeRowWidget(width, height, 3, 119, Nozomi, Makoto, Crisutina, Mitsuki, Shiori),
-                  onTap: (){
-                    setState(() {
-                      launchWebView("https://youtu.be/CGEw3s22L38");
-                    });
-                  },
-                ),
-                GestureDetector(
-                  child: makeRowWidget(width, height, 3, 131, Kokkoro, Neneka, Seonchika, Sukyaru, Kyouka),
-                  onTap: (){
-                    setState(() {
-                      launchWebView("https://youtu.be/Pw-mkbXkfv8");
-                    });
-                  },
-                ),
-                GestureDetector(
-                  child: makeRowWidget(width, height, 3, 138, Miyako, Iriya, Neneka, Sukyaru, Kyouka),
-                  onTap: (){
-                    setState(() {
-                      launchWebView("https://youtu.be/AizOwUmVLNQ");
-                    });
-                  },
-                ),
-                GestureDetector(
-                  child: makeRowWidget(width, height, 3, 165, Zuun, Kaori, Makoto, Seiyane, Crisutina),
-                  onTap: (){
-                    setState(() {
-                      launchWebView("https://youtu.be/s4e-6-VTN88");
-                    });
-                  },
-                ),
-                GestureDetector(
-                  child: makeRowWidget(width, height, 3, 145, Miyako, Iriya, Kyaru, Sukyaru, Kyouka),
-                  onTap: (){
-                    setState(() {
-                      launchWebView("https://youtu.be/t3NdB7uFSxI");
-                    });
-                  },
-                ),
-                GestureDetector(
-                  child: makeRowWidget(width, height, 2, 202, Kaori, Makoto, Sumaki, Crisutina, Shiori),
-                  onTap: (){
-                    setState(() {
-                      launchWebView("https://youtu.be/-4x_9Zx18aA");
-                    });
-                  },
-                ),
-                GestureDetector(
-                  child: makeRowWidget(width, height, 2, 208, Makoto, Seiyane, Hiyori, Crisutina, Sukoro),
-                  onTap: (){
-                    setState(() {
-                      launchWebView("https://youtu.be/eTwFuWP1q_k");
-                    });
-                  },
-                ),
-                GestureDetector(
-                  child: makeRowWidget(width, height, 2, 205, Kaori, Makoto, Tomo, Sumaki, Crisutina),
-                  onTap: (){
-                    setState(() {
-                      launchWebView("https://youtu.be/PojSZtLBaWg");
-                    });
-                  },
-                ),
-                GestureDetector(
-                  child: makeRowWidget(width, height, 2, 172, Makoto, Chita, Ray, Kokkoro, Arisa),
-                  onTap: (){
-                    setState(() {
-                      launchWebView("https://youtu.be/jsxFUTZ4pH8");
-                    });
-                  },
-                ),
-                GestureDetector(
-                  child: makeRowWidget(width, height, 2, 155, Makoto, Chita, Ray, Arisa, Seonchika),
-                  onTap: (){
-                    setState(() {
-                      launchWebView("https://youtu.be/jaxIcfWB6qs");
-                    });
-                  },
-                ),
-                GestureDetector(
-                  child: makeRowWidget(width, height, 1, 181, Kaori, Chita, Ray, Shinobu, Shiori),
-                  onTap: (){
-                    setState(() {
-                      launchWebView("https://youtu.be/ajrFE6CrQNU");
-                    });
-                  },
-                ),
-                GestureDetector(
-                  child: makeRowWidget(width, height, 1, 148, Akari, Neneka, Sukyaru, Kyouka, Halsaki),
-                  onTap: (){
-                    setState(() {
-                      launchWebView("https://youtu.be/GAdKHik0Ups");
-                    });
-                  },
-                ),
-                GestureDetector(
-                  child: makeRowWidget(width, height, 1, 227, Kaori, Makoto, Seiyane, Tomo, Crisutina),
-                  onTap: (){
-                    setState(() {
-                      launchWebView("https://youtu.be/t9BsYDgOzfg");
-                    });
-                  },
-                ),
-                GestureDetector(
-                  child: makeRowWidget(width, height, 1, 216, Makoto, Hiyori, Sumaki, Crisutina, Arisa),
-                  onTap: (){
-                    setState(() {
-                      launchWebView("https://youtu.be/Fm2GzQRXj00");
-                    });
-                  },
-                ),
-              ],
+        ),
+      ),
+      body:  Container(
+        child: ListView(
+          scrollDirection: Axis.vertical,
+          children: <Widget>[
+            GestureDetector(
+              child: makeRowWidget(width, height, 3, 140, Neneka, Kyaru, Seonchika, Sukyaru, Kyouka),
+              onTap: (){
+                setState(() {
+                  launchWebView("https://youtu.be/2x7ZRKgHeVo");
+                });
+              },
             ),
-          ),
-        );
+            GestureDetector(
+              child: makeRowWidget(width, height, 3, 155, Kaori, Makoto, Seiyane, Ayane, Crisutina),
+              onTap: (){
+                setState(() {
+                  launchWebView("https://youtu.be/PqcxNZwImZw");
+                });
+              },
+            ),
+            GestureDetector(
+              child: makeRowWidget(width, height, 3, 133, Iriya, Akari, Misato, Sukyaru, Kyouka),
+              onTap: (){
+                setState(() {
+                  launchWebView("https://youtu.be/mhWyDqiYOlQ");
+                });
+              },
+            ),
+            GestureDetector(
+              child: makeRowWidget(width, height, 2, 166, Iriya, Misato, Kyaru, Sukyaru, Kyouka),
+              onTap: (){
+                setState(() {
+                  launchWebView("https://youtu.be/nlSDi2GGAME");
+                });
+              },
+            ),
+            GestureDetector(
+              child: makeRowWidget(width, height, 2, 152, Akari, Neneka, Sukyaru, Kyouka, Halsaki),
+              onTap: (){
+                setState(() {
+                  launchWebView("https://youtu.be/WGcvnLD0U8E");
+                });
+              },
+            ),
+            GestureDetector(
+              child: makeRowWidget(width, height, 2, 155, Iriya, Misato, Kyaru, Sukyaru, Kyouka),
+              onTap: (){
+                setState(() {
+                  launchWebView("https://youtu.be/UzfqfoQA44g");
+                });
+              },
+            ),
+            GestureDetector(
+              child: makeRowWidget(width, height, 2, 149, Neneka, Seonchika, Sukyaru, Kyouka, Halsaki),
+              onTap: (){
+                setState(() {
+                  launchWebView("https://youtu.be/6cq_lFd557I");
+                });
+              },
+            ),
+            GestureDetector(
+              child: makeRowWidget(width, height, 2, 155, Kaori, Makoto, Tomo, Crisutina, Kokkoro),
+              onTap: (){
+                setState(() {
+                  launchWebView("https://youtu.be/I5hetkpWOIY");
+                });
+              },
+            ),
+            GestureDetector(
+              child: makeRowWidget(width, height, 1, 212, Kaori, Makoto, Tomo, Crisutina, Kokkoro),
+              onTap: (){
+                setState(() {
+                  launchWebView("https://youtu.be/_nNkHux6PRA");
+                });
+              },
+            ),
+            GestureDetector(
+              child: makeRowWidget(width, height, 1, 189, Makoto, Seiyane, Hiyori, Ray, Crisutina),
+              onTap: (){
+                setState(() {
+                  launchWebView("https://youtu.be/m_qUtQZX49w");
+                });
+              },
+            ),
+            GestureDetector(
+              child: makeRowWidget(width, height, 1, 173, Iriya, Akari, Neneka, Sukyaru, Kyouka),
+              onTap: (){
+                setState(() {
+                  launchWebView("https://youtu.be/AIx3i9upRck");
+                });
+              },
+            ),
+            GestureDetector(
+              child: makeRowWidget(width, height, 1, 143, Kokkoro, Kyaru, Sukyaru, Kyouka, Halsaki),
+              onTap: (){
+                setState(() {
+                  launchWebView("https://youtu.be/yfsH-rSMDT4");
+                });
+              },
+            ),
+            GestureDetector(
+              child: makeRowWidget(width, height, 1, 139, Yukari, Kyaru, Sukyaru, Kyouka, Halsaki),
+              onTap: (){
+                setState(() {
+                  launchWebView("https://youtu.be/1B37242TKW8");
+                });
+              },
+            ),
+            GestureDetector(
+              child: makeRowWidget(width, height, 1, 190, Makoto, Seiyane, Hiyori, Ray, Arisa),
+              onTap: (){
+                setState(() {
+                  launchWebView("https://youtu.be/qiOboz0lJ_A");
+                });
+              },
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
 
@@ -256,8 +247,8 @@ Widget makgeIconRow(String char1, String char2, String char3, String char4, Stri
     children: <Widget>[
       Container(
         child: Image.asset(char1,
-        height: 60,
-        width: 60,
+          height: 60,
+          width: 60,
         ),
         decoration: BoxDecoration(
           border: Border.all(
@@ -337,19 +328,19 @@ Widget makeRowTitle(double width, int height, int stage, int damage){
     children: <Widget>[
       Container(
         child: Text('${stage}단계',
-        style: TextStyle(
-          color: Colors.pink[100],
-          fontFamily: 'cafeDong',
-          fontSize: 30,
+          style: TextStyle(
+            color: Colors.pink[100],
+            fontFamily: 'cafeDong',
+            fontSize: 30,
           ),
         ),
         margin: EdgeInsets.fromLTRB(ltMargin, ltMargin, rightMargin, bottomMargin),
       ),
       Text('${damage}만',
         style: TextStyle(
-        color: Colors.pink[100],
-        fontFamily: 'cafeDong',
-        fontSize: 30,
+          color: Colors.pink[100],
+          fontFamily: 'cafeDong',
+          fontSize: 30,
         ),
       ),
     ],
@@ -366,20 +357,20 @@ launchWebView(String url) async {
 
 Widget makeRowWidget(double width, int height, int stage, int damage, String char1, String char2, String char3, String char4, String char5){
   return Container(
-      height: height/5,
-      decoration: BoxDecoration(
-          border: Border(
-              bottom: BorderSide(
-                color: Colors.red[100],
-                width: 3,
-              )
-          )
-      ),
-      child: Column(
-        children: <Widget>[
-          makeRowTitle(width, height, stage, damage),
-          makgeIconRow(char1, char2, char3, char4, char5, width, height),
-        ],
-      ),
-    );
+    height: height/5,
+    decoration: BoxDecoration(
+        border: Border(
+            bottom: BorderSide(
+              color: Colors.red[100],
+              width: 3,
+            )
+        )
+    ),
+    child: Column(
+      children: <Widget>[
+        makeRowTitle(width, height, stage, damage),
+        makgeIconRow(char1, char2, char3, char4, char5, width, height),
+      ],
+    ),
+  );
 }
